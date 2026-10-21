@@ -27,20 +27,38 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
 
 <table>
   <tr>
-    <td width="33%" valign="top">
-      <img src="public/projects/portal-de-chamados/kanban.webp" alt="Portal de Chamados" />
-      <br /><strong>Portal de Chamados</strong>
-      <br /><sub>Chamados semelhante ao GLPI, com permissões, chat, notificações, e-mail e quadro Kanban</sub>
+    <td width="50%" valign="top">
+      <img src="public/projects/gvit-epi/painel.webp" alt="GVIT EPI" />
+      <br /><strong>GVIT EPI</strong>
+      <br /><sub>Gestão e entrega de EPI com motor de regras que confere CA, risco da função e prazo de troca antes de cada entrega, com vencimentos, ocorrências e ficha NR-06 · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD</sub>
     </td>
-    <td width="33%" valign="top">
-      <img src="public/projects/clouddiamond/horas-avulsas.webp" alt="Portal CloudDiamond" />
-      <br /><strong>Portal CloudDiamond</strong>
-      <br /><sub>Tickets e acompanhamento de entregas de máquinas virtuais, com agenda de locação</sub>
+    <td width="50%" valign="top">
+      <img src="public/projects/gvit-terceiros/visao-global.webp" alt="GVIT Gestão de Terceiros" />
+      <br /><strong>GVIT Gestão de Terceiros</strong>
+      <br /><sub>Gestão multi-tenant de colaboradores e documentos de terceiros, com quarteirização, pré-análise de documentos por IA e validação humana · perfis de admin, contratante, avaliador e prestadora · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD</sub>
     </td>
-    <td width="33%" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://www.youtube.com/watch?v=nIiooEnrTe8"><img src="public/projects/cashback/video.webp" alt="Sistema de Cashback (vídeo)" /></a>
+      <br /><strong>Sistema de Cashback</strong>
+      <br /><sub>Cashback sob medida para indústria de MDF: créditos a cada pedido para usar em compras futuras e campanhas · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD · <a href="https://www.youtube.com/watch?v=nIiooEnrTe8">vídeo</a></sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://www.youtube.com/watch?v=uS0W-OkU1YI"><img src="public/projects/agendamento-estetica/video.webp" alt="Sistema de Agendamento para Clínicas de Estética (vídeo)" /></a>
+      <br /><strong>Agendamento para Clínicas de Estética</strong>
+      <br /><sub>O cliente escolhe a profissional, o tratamento e o horário disponível · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD · <a href="https://www.youtube.com/watch?v=uS0W-OkU1YI">vídeo</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <img src="public/projects/dashboards-erp/faturamento.webp" alt="Dashboards de Módulos de ERP" />
       <br /><strong>Dashboards de Módulos de ERP</strong>
       <br /><sub>Painéis em Angular 17, Angular Material e ApexCharts consumindo as APIs do ERP</sub>
+    </td>
+    <td width="50%" valign="middle" align="center">
+      <a href="https://www.davidmarques.com.br/#projetos"><strong>Ver todos os projetos →</strong></a>
+      <br /><sub>davidmarques.com.br</sub>
     </td>
   </tr>
 </table>
@@ -48,7 +66,7 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
 ## Tecnologias
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,react,postgres,aws,js,php,py,laravel,nextjs,angular,vue,sass,mongodb,mysql,redis,supabase,rabbitmq,docker,linux,nginx,jenkins,github,gitlab,vscode&perline=12" alt="Tecnologias" />
+  <img src="https://skillicons.dev/icons?i=nodejs,react,postgres,aws,js,php,py,nestjs,laravel,nextjs,angular,vue,sass,mongodb,mysql,redis,supabase,rabbitmq,docker,linux,nginx,jenkins,github,gitlab,vscode&perline=12" alt="Tecnologias" />
 </p>
 
 ## Estatísticas

@@ -10,11 +10,15 @@ export type SocialLink = {
 export type ProjectImage = {
   src: string
   alt: string
+  // Quando presente, a galeria mostra o vídeo do YouTube no lugar da imagem
+  youtubeId?: string
 }
 
 export type Project = {
   title: string
   description: string
+  // Aparece só na aba "Todos os projetos"
+  allOnly?: boolean
   images?: ProjectImage[]
   highlights?: string[]
   tags?: string[]
@@ -150,6 +154,7 @@ export const skills: SkillGroup[] = [
       "Node.js",
       "APIs REST",
       "Express",
+      "NestJS",
       "Laravel",
       "FilamentPHP",
       "CodeIgniter",
@@ -177,6 +182,7 @@ export const skills: SkillGroup[] = [
       "AWS",
       "DigitalOcean",
       "Docker",
+      "Portainer",
       "Linux",
       "Nginx",
       "SSH",
@@ -195,6 +201,7 @@ export const skills: SkillGroup[] = [
       "APIs de LLM",
       "n8n",
       "Microsoft Copilot",
+      "Claude SDK",
       "Automação de processos",
     ],
   },
@@ -225,7 +232,117 @@ export const skills: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
+    title: "GVIT EPI",
+    description:
+      "Plataforma de gestão e entrega de EPI: um motor de regras confere o CA, o risco da função e o prazo de troca antes de cada entrega e registra sob qual norma cada decisão foi tomada.",
+    images: [
+      {
+        src: "/projects/gvit-epi/painel.webp",
+        alt: "Painel de conformidade da unidade com pendências e planos de ação",
+      },
+      {
+        src: "/projects/gvit-epi/entrega.webp",
+        alt: "Balcão de entrega com veredito de conformidade por item",
+      },
+      {
+        src: "/projects/gvit-epi/colaboradores.webp",
+        alt: "Busca de colaboradores com ficha de EPI e dossiê de eficácia",
+      },
+      {
+        src: "/projects/gvit-epi/vencimentos.webp",
+        alt: "Vencimentos com equipamentos em atraso, trocas próximas e em dia",
+      },
+      { src: "/projects/gvit-epi/login.webp", alt: "Tela de login" },
+    ],
+    highlights: [
+      "Painel de conformidade por unidade, com pendências e planos de ação",
+      "Balcão de entrega em etapas: identificar, selecionar, veredito e assinatura",
+      "Matriz função-EPI, homologação e revisão de CA",
+      "Vencimentos, ocorrências, estoque e custos",
+      "Ficha de EPI (NR-06) e dossiê de eficácia por trabalhador",
+    ],
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Claude SDK", "Docker", "Portainer", "GitHub CI/CD"],
+  },
+  {
+    title: "GVIT Gestão de Terceiros",
+    description:
+      "Plataforma multi-tenant de gestão de colaboradores e documentos de terceiros, com suporte a quarteirização. Uma IA faz a pré-análise dos documentos enviados pela empresa no cadastro e pelas prestadoras sobre seus colaboradores, e avaliadores humanos validam.",
+    images: [
+      {
+        src: "/projects/gvit-terceiros/visao-global.webp",
+        alt: "Visão global da plataforma com auto-aprovação da IA e custo por análise",
+      },
+      {
+        src: "/projects/gvit-terceiros/contratante.webp",
+        alt: "Dashboard da contratante com terceiros, colaboradores e situação dos documentos",
+      },
+      {
+        src: "/projects/gvit-terceiros/prestadora.webp",
+        alt: "Painel da prestadora com bloqueios, reenvios e documentos pendentes",
+      },
+      {
+        src: "/projects/gvit-terceiros/avaliador.webp",
+        alt: "Mesa de análise com o desempenho do avaliador",
+      },
+      { src: "/projects/gvit-terceiros/login.webp", alt: "Tela de login" },
+    ],
+    highlights: [
+      "Quatro perfis: admin da plataforma, contratante, avaliador e prestadora",
+      "Pré-análise de documentos por IA, com auto-aprovação de alta confiança e fila de revisão humana",
+      "Mesa de análise com fila de aprovações, coerência, histórico e métricas do avaliador",
+      "Prestadora cadastra colaboradores, envia documentos e corrige reprovações",
+      "Tipos de documento, regras documentais, vencimentos com bloqueio automático e auditoria",
+    ],
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Claude SDK", "Docker", "Portainer", "GitHub CI/CD"],
+  },
+  {
+    title: "Sistema de Cashback",
+    description:
+      "Sistema de cashback sob medida para uma indústria de MDF, com foco em fidelização e aumento de recorrência de compras. Os clientes acumulam créditos a cada pedido e usam esses valores em compras futuras ou campanhas promocionais.",
+    images: [
+      {
+        src: "/projects/cashback/video.webp",
+        alt: "Demonstração do sistema de cashback",
+        youtubeId: "nIiooEnrTe8",
+      },
+    ],
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Claude SDK", "Docker", "Portainer", "GitHub CI/CD"],
+  },
+  {
+    title: "Sistema de Agendamento para Clínicas de Estética",
+    description:
+      "Agendamento online com foco em automação, organização e experiência do cliente: o próprio cliente escolhe a profissional, o tratamento e o horário disponível, de forma rápida e intuitiva.",
+    images: [
+      {
+        src: "/projects/agendamento-estetica/video.webp",
+        alt: "Demonstração do sistema de agendamento",
+        youtubeId: "uS0W-OkU1YI",
+      },
+    ],
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Claude SDK", "Docker", "Portainer", "GitHub CI/CD"],
+  },
+  {
+    title: "Dashboards de Módulos de ERP",
+    description:
+      "Interface gráfica amigável para os clientes do ERP visualizarem os dados da sua empresa e filial, consumindo as APIs do ERP.",
+    images: [
+      {
+        src: "/projects/dashboards-erp/faturamento.webp",
+        alt: "Dashboard de faturamento por mês e por estado",
+      },
+    ],
+    tags: ["Angular 17", "Angular Material", "ApexCharts", "APIs de ERP"],
+  },
+  {
+    title: "Portfólio",
+    description:
+      "Este site! Feito com React, TypeScript, Tailwind CSS e shadcn/ui, hospedado na Vercel.",
+    tags: ["React", "TypeScript", "Tailwind", "shadcn/ui"],
+    repo: "https://github.com/OSenhorD/osenhord",
+  },
+  {
     title: "Portal de Chamados",
+    allOnly: true,
     description:
       "Aplicação de chamados, semelhante ao GLPI, focada nos recursos necessários do contratante.",
     images: [
@@ -250,6 +367,7 @@ export const projects: Project[] = [
   },
   {
     title: "Portal CloudDiamond",
+    allOnly: true,
     description:
       "Aplicação para cadastro de tickets e acompanhamento de entregas de máquinas virtuais para empresa cliente.",
     images: [
@@ -274,31 +392,13 @@ export const projects: Project[] = [
       "Listagem de máquinas e horários disponíveis para locação",
     ],
   },
-  {
-    title: "Dashboards de Módulos de ERP",
-    description:
-      "Interface gráfica amigável para os clientes do ERP visualizarem os dados da sua empresa e filial, consumindo as APIs do ERP.",
-    images: [
-      {
-        src: "/projects/dashboards-erp/faturamento.webp",
-        alt: "Dashboard de faturamento por mês e por estado",
-      },
-    ],
-    tags: ["Angular 17", "Angular Material", "ApexCharts", "APIs de ERP"],
-  },
-  {
-    title: "Portfólio",
-    description:
-      "Este site! Feito com React, TypeScript, Tailwind CSS e shadcn/ui, hospedado na Vercel.",
-    tags: ["React", "TypeScript", "Tailwind", "shadcn/ui"],
-    repo: "https://github.com/OSenhorD/osenhord",
-  },
 ]
 
 // Histórico de projetos no perfil da 99Freelas (projetos cancelados ficam de fora)
 export const deliveredProjects: DeliveredProject[] = [
   {
     title: "Sistema de controle de gado com cadastro de pastos e app mobile",
+    url: "https://www.99freelas.com.br/project/sistema-de-controle-de-gado-com-cadastro-de-pastos-e-app-mobile-715145",
     period: "jan. — fev. 2025",
     tags: ["Angular", "NodeJS"],
   },
