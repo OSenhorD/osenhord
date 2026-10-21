@@ -10,6 +10,7 @@
   <a href="https://www.linkedin.com/in/davidmarques123/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:dev.davidmarques@gmail.com"><img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
   <a href="https://wa.me/5542999027693"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
+  <a href="https://www.99freelas.com.br/user/davidmarques-dev"><img src="https://img.shields.io/badge/99Freelas-★_4,71-1E88E5?style=for-the-badge" alt="99Freelas: nota 4,71" /></a>
 </p>
 
 ## Sobre mim
@@ -20,6 +21,13 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
 - 🤖 Uso inteligência artificial para ganho de produtividade e geração de valor
 - 🧭 Atuo do levantamento de requisitos com clientes à implementação e sustentação das soluções
 - 🎯 Foco em eficiência, escalabilidade e resolução de problemas reais
+- ⭐ Mais de 5 anos de experiência · 24 projetos concluídos como freelancer, com nota 4,71 em 25 avaliações na [99Freelas](https://www.99freelas.com.br/user/davidmarques-dev)
+
+## Projetos em destaque
+
+- **Portal de Chamados** — aplicação de chamados semelhante ao GLPI, com permissões, chat, notificações, e-mail e quadro Kanban
+- **Portal CloudDiamond** — cadastro de tickets e acompanhamento de entregas de máquinas virtuais, com agenda de locação
+- **Dashboards de Módulos de ERP** — painéis em Angular 17, Angular Material e ApexCharts consumindo as APIs do ERP
 
 ## Tecnologias
 

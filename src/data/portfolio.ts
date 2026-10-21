@@ -10,9 +10,17 @@ export type SocialLink = {
 export type Project = {
   title: string
   description: string
-  tags: string[]
+  highlights?: string[]
+  tags?: string[]
   repo?: string
   demo?: string
+}
+
+export type Testimonial = {
+  project: string
+  quote: string
+  rating: number
+  date: string
 }
 
 export type Experience = {
@@ -39,6 +47,7 @@ export const profile = {
   about: [
     "Experiência na construção de APIs, integrações entre plataformas (ERP, sistemas web, serviços externos) e uso de inteligência artificial para ganho de produtividade e geração de valor.",
     "Atuo desde o levantamento de requisitos com clientes até a implementação e sustentação das soluções, sempre com foco em eficiência, escalabilidade e resolução de problemas reais.",
+    "São mais de 5 anos de experiência: comecei dando suporte a projetos legados em AngularJS e PHP e, com o tempo, passei a criar portais e sistemas de gestão personalizados com Node.js, React, Next.js, Vue.js, PostgreSQL, Redis e RabbitMQ.",
     "Stack principal: Node.js, React, PostgreSQL, AWS.",
   ],
   email: "dev.davidmarques@gmail.com",
@@ -62,7 +71,7 @@ export const skills: SkillGroup[] = [
   },
   {
     title: "Linguagens",
-    items: ["JavaScript", "PHP", "Python"],
+    items: ["JavaScript", "TypeScript", "PHP", "Python", "SQL", "HTML", "CSS"],
   },
   {
     title: "Front-end e mobile",
@@ -71,8 +80,12 @@ export const skills: SkillGroup[] = [
       "React Hooks",
       "Next.js",
       "Angular",
+      "Angular Material",
+      "AngularJS",
       "Vue.js",
       "SASS",
+      "ApexCharts",
+      "WordPress",
       "React Native",
       "Capacitor",
       "Apple Store",
@@ -84,8 +97,10 @@ export const skills: SkillGroup[] = [
     items: [
       "Node.js",
       "APIs REST",
+      "Express",
       "Laravel",
       "FilamentPHP",
+      "CodeIgniter",
       "Composer",
       "Supabase",
       "RabbitMQ",
@@ -94,7 +109,15 @@ export const skills: SkillGroup[] = [
   },
   {
     title: "Bancos de dados",
-    items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Design de banco de dados", "Workbench"],
+    items: [
+      "PostgreSQL",
+      "MySQL",
+      "MariaDB",
+      "MongoDB",
+      "Redis",
+      "Design de banco de dados",
+      "Workbench",
+    ],
   },
   {
     title: "DevOps e ferramentas",
@@ -148,29 +171,42 @@ export const skills: SkillGroup[] = [
   },
 ]
 
-// TODO: substitua pelos seus projetos reais
 export const projects: Project[] = [
+  {
+    title: "Portal de Chamados",
+    description:
+      "Aplicação de chamados, semelhante ao GLPI, focada nos recursos necessários do contratante.",
+    highlights: [
+      "Login e permissões de acesso",
+      "Segurança dupla, no front-end e no back-end",
+      "Criação, edição e chat para chamados",
+      "Notificações e envio de e-mail",
+      "Tarefas realizadas, backlog ou a fazer, com quadro Kanban",
+    ],
+  },
+  {
+    title: "Portal CloudDiamond",
+    description:
+      "Aplicação para cadastro de tickets e acompanhamento de entregas de máquinas virtuais para empresa cliente.",
+    highlights: [
+      "Login e permissões de acesso",
+      "Segurança dupla, no front-end e no back-end",
+      "Criação e edição de tickets",
+      "Listagem de máquinas e horários disponíveis para locação",
+    ],
+  },
+  {
+    title: "Dashboards de Módulos de ERP",
+    description:
+      "Interface gráfica amigável para os clientes do ERP visualizarem os dados da sua empresa e filial, consumindo as APIs do ERP.",
+    tags: ["Angular 17", "Angular Material", "ApexCharts", "APIs de ERP"],
+  },
   {
     title: "Portfólio",
     description:
       "Este site! Feito com React, TypeScript, Tailwind CSS e shadcn/ui, hospedado na Vercel.",
     tags: ["React", "TypeScript", "Tailwind", "shadcn/ui"],
     repo: "https://github.com/OSenhorD/osenhord",
-  },
-  {
-    title: "Projeto Exemplo",
-    description:
-      "Descreva aqui o problema que o projeto resolve, as principais funcionalidades e o que você aprendeu.",
-    tags: ["Node.js", "PostgreSQL"],
-    repo: "https://github.com/OSenhorD",
-  },
-  {
-    title: "Outro Projeto",
-    description:
-      "Uma breve descrição do projeto, destacando tecnologias e resultados alcançados.",
-    tags: ["React", "API"],
-    repo: "https://github.com/OSenhorD",
-    demo: "https://vercel.com",
   },
 ]
 
@@ -199,10 +235,52 @@ export const experience: Experience[] = [
   },
 ]
 
+export const freelance = {
+  platform: "99Freelas",
+  url: "https://www.99freelas.com.br/user/davidmarques-dev",
+  rating: 4.71,
+  reviews: 25,
+  completedProjects: 24,
+  memberSince: "abr. 2024",
+}
+
+// Avaliações de clientes no perfil da 99Freelas
+export const testimonials: Testimonial[] = [
+  {
+    project: "Plataforma de IoT responsiva",
+    quote:
+      "Esperava 1 dev, mas me entregou 2, o que foi excelente, já que meu prazo era curto. Resolveu rapidamente os desafios e entregou um resultado muito bem feito. Farei negócios novamente.",
+    rating: 5,
+    date: "dez. 2025",
+  },
+  {
+    project: "Criar landing page para empresa de guaraná",
+    quote:
+      "Excelente profissional. Comunicação clara e constante, cumpriu todos os prazos e entregou um trabalho de alta qualidade. Demonstrou domínio técnico e proatividade, sugerindo melhorias que agregaram valor ao projeto. Recomendo fortemente e contrataria novamente sem hesitar.",
+    rating: 5,
+    date: "dez. 2025",
+  },
+  {
+    project: "Landing page institucional para cervejaria",
+    quote:
+      "Trabalho impecável. Entregou exatamente o que foi combinado, com organização, qualidade técnica e ótimo relacionamento profissional. Muito satisfeito com o resultado.",
+    rating: 5,
+    date: "dez. 2025",
+  },
+  {
+    project: "Melhorias e personalizações na loja Tray",
+    quote:
+      "Excelente profissional. Comunicação clara, entregas rápida e qualidade acima do esperado. Recomendo fortemente.",
+    rating: 5,
+    date: "dez. 2025",
+  },
+]
+
 export const navigation = [
   { label: "Sobre", href: "#sobre" },
   { label: "Habilidades", href: "#habilidades" },
   { label: "Projetos", href: "#projetos" },
   { label: "Experiência", href: "#experiencia" },
+  { label: "Avaliações", href: "#avaliacoes" },
   { label: "Contato", href: "#contato" },
 ]
