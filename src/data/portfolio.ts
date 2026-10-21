@@ -264,6 +264,38 @@ export const projects: Project[] = [
     tags: ["Next.js", "NestJS", "PostgreSQL", "Claude SDK", "Docker", "Portainer", "GitHub CI/CD"],
   },
   {
+    title: "GVIT Gestão de Terceiros",
+    description:
+      "Plataforma multi-tenant de gestão de colaboradores e documentos de terceiros, com suporte a quarteirização. Uma IA faz a pré-análise dos documentos enviados pela empresa no cadastro e pelas prestadoras sobre seus colaboradores, e avaliadores humanos validam.",
+    featured: true,
+    images: [
+      {
+        src: "/projects/gvit-terceiros/visao-global.webp",
+        alt: "Visão global da plataforma com auto-aprovação da IA e custo por análise",
+      },
+      {
+        src: "/projects/gvit-terceiros/contratante.webp",
+        alt: "Dashboard da contratante com terceiros, colaboradores e situação dos documentos",
+      },
+      {
+        src: "/projects/gvit-terceiros/prestadora.webp",
+        alt: "Painel da prestadora com bloqueios, reenvios e documentos pendentes",
+      },
+      {
+        src: "/projects/gvit-terceiros/avaliador.webp",
+        alt: "Mesa de análise com o desempenho do avaliador",
+      },
+      { src: "/projects/gvit-terceiros/login.webp", alt: "Tela de login" },
+    ],
+    highlights: [
+      "Quatro perfis: admin da plataforma, contratante, avaliador e prestadora",
+      "Pré-análise de documentos por IA, com auto-aprovação de alta confiança e fila de revisão humana",
+      "Mesa de análise com fila de aprovações, coerência, histórico e métricas do avaliador",
+      "Prestadora cadastra colaboradores, envia documentos e corrige reprovações",
+      "Tipos de documento, regras documentais, vencimentos com bloqueio automático e auditoria",
+    ],
+  },
+  {
     title: "Sistema de Cashback",
     description:
       "Sistema de cashback sob medida para uma indústria de MDF, com foco em fidelização e aumento de recorrência de compras. Os clientes acumulam créditos a cada pedido e usam esses valores em compras futuras ou campanhas promocionais.",

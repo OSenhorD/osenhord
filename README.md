@@ -34,6 +34,13 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
     </td>
   </tr>
   <tr>
+    <td colspan="3" valign="top">
+      <img src="public/projects/gvit-terceiros/visao-global.webp" alt="GVIT Gestão de Terceiros" />
+      <br /><strong>GVIT Gestão de Terceiros</strong>
+      <br /><sub>Gestão multi-tenant de colaboradores e documentos de terceiros, com quarteirização, pré-análise de documentos por IA e validação humana · perfis de admin, contratante, avaliador e prestadora</sub>
+    </td>
+  </tr>
+  <tr>
     <td width="33%" valign="top">
       <a href="https://www.youtube.com/watch?v=nIiooEnrTe8"><img src="public/projects/cashback/video.webp" alt="Sistema de Cashback (vídeo)" /></a>
       <br /><strong>Sistema de Cashback</strong>
