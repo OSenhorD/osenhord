@@ -14,16 +14,17 @@
 
 ## Sobre mim
 
-Construo aplicações web modernas, rápidas e bem cuidadas — do back-end à interface.
+Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automação de processos**.
 
-- 🔭 Trabalhando atualmente em: _seu projeto atual_
-- 🌱 Aprendendo: _o que você está estudando_
-- 💬 Me pergunte sobre: React, TypeScript, Node.js
+- 🔌 Construo APIs e integrações entre plataformas — ERP, sistemas web e serviços externos
+- 🤖 Uso inteligência artificial para ganho de produtividade e geração de valor
+- 🧭 Atuo do levantamento de requisitos com clientes à implementação e sustentação das soluções
+- 🎯 Foco em eficiência, escalabilidade e resolução de problemas reais
 
-## Tecnologias
+## Stack principal
 
 <p>
-  <img src="https://skillicons.dev/icons?i=react,ts,tailwind,vite,nodejs,express,postgres,prisma,git,docker,vercel,linux" alt="Tecnologias" />
+  <img src="https://skillicons.dev/icons?i=nodejs,react,postgres,aws" alt="Node.js, React, PostgreSQL, AWS" />
 </p>
 
 ## Estatísticas

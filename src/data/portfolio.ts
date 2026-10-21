@@ -34,10 +34,11 @@ export const profile = {
   role: "Desenvolvedor Full Stack",
   location: "Brasil",
   headline:
-    "Construo aplicações web modernas, rápidas e bem cuidadas — do back-end à interface.",
+    "Com foco em integrações de sistemas e automação de processos.",
   about: [
-    "Sou desenvolvedor de software com foco em criar produtos úteis e bem construídos. Gosto de transformar problemas complexos em soluções simples, com código limpo e boa experiência para quem usa.",
-    "Atualmente trabalho principalmente com o ecossistema JavaScript/TypeScript, React e Node.js, sempre buscando aprender novas ferramentas e boas práticas.",
+    "Experiência na construção de APIs, integrações entre plataformas (ERP, sistemas web, serviços externos) e uso de inteligência artificial para ganho de produtividade e geração de valor.",
+    "Atuo desde o levantamento de requisitos com clientes até a implementação e sustentação das soluções, sempre com foco em eficiência, escalabilidade e resolução de problemas reais.",
+    "Stack principal: Node.js, React, PostgreSQL, AWS.",
   ],
   email: "dev.davidmarques@gmail.com",
   phone: "(42) 99902-7693",
@@ -55,16 +56,16 @@ export const socials: SocialLink[] = [
 
 export const skills: SkillGroup[] = [
   {
-    title: "Front-end",
-    items: ["React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Vite"],
+    title: "Stack principal",
+    items: ["Node.js", "React", "PostgreSQL", "AWS"],
   },
   {
-    title: "Back-end",
-    items: ["Node.js", "Express", "REST APIs", "PostgreSQL", "Prisma"],
+    title: "Integrações",
+    items: ["APIs", "ERP", "Sistemas web", "Serviços externos"],
   },
   {
-    title: "Ferramentas",
-    items: ["Git", "GitHub Actions", "Docker", "Vercel", "Linux"],
+    title: "Automação e IA",
+    items: ["Automação de processos", "Inteligência artificial", "Produtividade"],
   },
 ]
 
