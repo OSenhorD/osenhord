@@ -44,12 +44,12 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
     <td width="33%" valign="top">
       <a href="https://www.youtube.com/watch?v=nIiooEnrTe8"><img src="public/projects/cashback/video.webp" alt="Sistema de Cashback (vídeo)" /></a>
       <br /><strong>Sistema de Cashback</strong>
-      <br /><sub>Cashback sob medida para indústria de MDF: créditos a cada pedido para usar em compras futuras e campanhas · <a href="https://www.youtube.com/watch?v=nIiooEnrTe8">vídeo</a></sub>
+      <br /><sub>Cashback sob medida para indústria de MDF: créditos a cada pedido para usar em compras futuras e campanhas · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD · <a href="https://www.youtube.com/watch?v=nIiooEnrTe8">vídeo</a></sub>
     </td>
     <td width="33%" valign="top">
       <a href="https://www.youtube.com/watch?v=uS0W-OkU1YI"><img src="public/projects/agendamento-estetica/video.webp" alt="Sistema de Agendamento para Clínicas de Estética (vídeo)" /></a>
       <br /><strong>Agendamento para Clínicas de Estética</strong>
-      <br /><sub>O cliente escolhe a profissional, o tratamento e o horário disponível · <a href="https://www.youtube.com/watch?v=uS0W-OkU1YI">vídeo</a></sub>
+      <br /><sub>O cliente escolhe a profissional, o tratamento e o horário disponível · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD · <a href="https://www.youtube.com/watch?v=uS0W-OkU1YI">vídeo</a></sub>
     </td>
     <td width="33%" valign="top">
       <img src="public/projects/dashboards-erp/faturamento.webp" alt="Dashboards de Módulos de ERP" />

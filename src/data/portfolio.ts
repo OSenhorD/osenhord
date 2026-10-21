@@ -307,6 +307,7 @@ export const projects: Project[] = [
         youtubeId: "nIiooEnrTe8",
       },
     ],
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Claude SDK", "Docker", "Portainer", "GitHub CI/CD"],
   },
   {
     title: "Sistema de Agendamento para Clínicas de Estética",
@@ -319,6 +320,7 @@ export const projects: Project[] = [
         youtubeId: "uS0W-OkU1YI",
       },
     ],
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Claude SDK", "Docker", "Portainer", "GitHub CI/CD"],
   },
   {
     title: "Dashboards de Módulos de ERP",
