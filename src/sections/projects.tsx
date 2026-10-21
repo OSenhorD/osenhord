@@ -24,9 +24,19 @@ export function Projects() {
         {projects.map((project) => (
           <Card
             key={project.title}
-            className={cn("transition-colors hover:border-foreground/20", project.images && "pt-0")}
+            className={cn(
+              "transition-colors hover:border-foreground/20",
+              project.images && "pt-0",
+              project.featured && "md:col-span-2",
+            )}
           >
-            {project.images && <ProjectGallery title={project.title} images={project.images} />}
+            {project.images && (
+              <ProjectGallery
+                title={project.title}
+                images={project.images}
+                coverClassName={project.featured ? "md:aspect-[21/9]" : undefined}
+              />
+            )}
             <CardHeader>
               <CardTitle className="text-lg">{project.title}</CardTitle>
               <CardDescription className="text-pretty">{project.description}</CardDescription>

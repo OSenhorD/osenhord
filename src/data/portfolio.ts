@@ -15,6 +15,7 @@ export type ProjectImage = {
 export type Project = {
   title: string
   description: string
+  featured?: boolean
   images?: ProjectImage[]
   highlights?: string[]
   tags?: string[]
@@ -224,6 +225,38 @@ export const skills: SkillGroup[] = [
 ]
 
 export const projects: Project[] = [
+  {
+    title: "GVIT EPI",
+    description:
+      "Plataforma de gestão e entrega de EPI: um motor de regras confere o CA, o risco da função e o prazo de troca antes de cada entrega e registra sob qual norma cada decisão foi tomada.",
+    featured: true,
+    images: [
+      {
+        src: "/projects/gvit-epi/painel.webp",
+        alt: "Painel de conformidade da unidade com pendências e planos de ação",
+      },
+      {
+        src: "/projects/gvit-epi/entrega.webp",
+        alt: "Balcão de entrega com veredito de conformidade por item",
+      },
+      {
+        src: "/projects/gvit-epi/colaboradores.webp",
+        alt: "Busca de colaboradores com ficha de EPI e dossiê de eficácia",
+      },
+      {
+        src: "/projects/gvit-epi/vencimentos.webp",
+        alt: "Vencimentos com equipamentos em atraso, trocas próximas e em dia",
+      },
+      { src: "/projects/gvit-epi/login.webp", alt: "Tela de login" },
+    ],
+    highlights: [
+      "Painel de conformidade por unidade, com pendências e planos de ação",
+      "Balcão de entrega em etapas: identificar, selecionar, veredito e assinatura",
+      "Matriz função-EPI, homologação e revisão de CA",
+      "Vencimentos, ocorrências, estoque e custos",
+      "Ficha de EPI (NR-06) e dossiê de eficácia por trabalhador",
+    ],
+  },
   {
     title: "Portal de Chamados",
     description:

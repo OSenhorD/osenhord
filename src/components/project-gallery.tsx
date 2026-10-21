@@ -12,7 +12,15 @@ import {
 import type { ProjectImage } from "@/data/portfolio"
 import { cn } from "@/lib/utils"
 
-export function ProjectGallery({ title, images }: { title: string; images: ProjectImage[] }) {
+export function ProjectGallery({
+  title,
+  images,
+  coverClassName,
+}: {
+  title: string
+  images: ProjectImage[]
+  coverClassName?: string
+}) {
   const [index, setIndex] = useState(0)
   const [cover] = images
   const current = images[index]
@@ -26,7 +34,10 @@ export function ProjectGallery({ title, images }: { title: string; images: Proje
         <button
           type="button"
           aria-label={`Ver imagens de ${title}`}
-          className="group/cover relative block aspect-video w-full overflow-hidden border-b bg-muted"
+          className={cn(
+            "group/cover relative block aspect-video w-full overflow-hidden border-b bg-muted",
+            coverClassName,
+          )}
         >
           <img
             src={cover.src}
@@ -94,10 +105,17 @@ export function ProjectGallery({ title, images }: { title: string; images: Proje
                 onClick={() => setIndex(i)}
                 className={cn(
                   "w-24 shrink-0 overflow-hidden rounded-md border-2 transition-opacity",
-                  i === index ? "border-primary" : "border-transparent opacity-60 hover:opacity-100",
+                  i === index
+                    ? "border-primary"
+                    : "border-transparent opacity-60 hover:opacity-100",
                 )}
               >
-                <img src={image.src} alt="" loading="lazy" className="aspect-video object-cover object-top" />
+                <img
+                  src={image.src}
+                  alt=""
+                  loading="lazy"
+                  className="aspect-video object-cover object-top"
+                />
               </button>
             ))}
           </div>

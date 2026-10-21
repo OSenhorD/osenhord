@@ -27,6 +27,13 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
 
 <table>
   <tr>
+    <td colspan="3" valign="top">
+      <img src="public/projects/gvit-epi/painel.webp" alt="GVIT EPI" />
+      <br /><strong>GVIT EPI</strong>
+      <br /><sub>Gestão e entrega de EPI com motor de regras que confere CA, risco da função e prazo de troca antes de cada entrega, com vencimentos, ocorrências e ficha NR-06</sub>
+    </td>
+  </tr>
+  <tr>
     <td width="33%" valign="top">
       <img src="public/projects/portal-de-chamados/kanban.webp" alt="Portal de Chamados" />
       <br /><strong>Portal de Chamados</strong>
