@@ -5,8 +5,7 @@
 </p>
 
 <p align="center">
-  <!-- TODO: troque pelo domínio da Vercel após o primeiro deploy -->
-  <a href="https://osenhord.vercel.app"><img src="https://img.shields.io/badge/Portfólio-000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" /></a>
+  <a href="https://www.davidmarques.com.br/"><img src="https://img.shields.io/badge/davidmarques.com.br-000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio: davidmarques.com.br" /></a>
   <a href="https://www.linkedin.com/in/davidmarques123/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:dev.davidmarques@gmail.com"><img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
   <a href="https://wa.me/5542999027693"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
@@ -21,13 +20,30 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
 - 🤖 Uso inteligência artificial para ganho de produtividade e geração de valor
 - 🧭 Atuo do levantamento de requisitos com clientes à implementação e sustentação das soluções
 - 🎯 Foco em eficiência, escalabilidade e resolução de problemas reais
-- ⭐ Mais de 5 anos de experiência · 24 projetos concluídos como freelancer, com nota 4,71 em 25 avaliações na [99Freelas](https://www.99freelas.com.br/user/davidmarques-dev)
+- ⭐ Cerca de 6 anos de experiência · 24 projetos concluídos como freelancer, com nota 4,71 em 25 avaliações na [99Freelas](https://www.99freelas.com.br/user/davidmarques-dev)
+- 🗣️ Português nativo · Inglês básico
 
 ## Projetos em destaque
 
-- **Portal de Chamados** — aplicação de chamados semelhante ao GLPI, com permissões, chat, notificações, e-mail e quadro Kanban
-- **Portal CloudDiamond** — cadastro de tickets e acompanhamento de entregas de máquinas virtuais, com agenda de locação
-- **Dashboards de Módulos de ERP** — painéis em Angular 17, Angular Material e ApexCharts consumindo as APIs do ERP
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <img src="public/projects/portal-de-chamados/kanban.webp" alt="Portal de Chamados" />
+      <br /><strong>Portal de Chamados</strong>
+      <br /><sub>Chamados semelhante ao GLPI, com permissões, chat, notificações, e-mail e quadro Kanban</sub>
+    </td>
+    <td width="33%" valign="top">
+      <img src="public/projects/clouddiamond/horas-avulsas.webp" alt="Portal CloudDiamond" />
+      <br /><strong>Portal CloudDiamond</strong>
+      <br /><sub>Tickets e acompanhamento de entregas de máquinas virtuais, com agenda de locação</sub>
+    </td>
+    <td width="33%" valign="top">
+      <img src="public/projects/dashboards-erp/faturamento.webp" alt="Dashboards de Módulos de ERP" />
+      <br /><strong>Dashboards de Módulos de ERP</strong>
+      <br /><sub>Painéis em Angular 17, Angular Material e ApexCharts consumindo as APIs do ERP</sub>
+    </td>
+  </tr>
+</table>
 
 ## Tecnologias
 

@@ -29,7 +29,7 @@ function Stars({ rating }: { rating: number }) {
 
 export function Testimonials() {
   return (
-    <Section id="avaliacoes" eyebrow="05. Avaliações" title="O que dizem os clientes">
+    <Section id="avaliacoes" eyebrow="06. Avaliações" title="O que dizem os clientes">
       <p className="max-w-2xl text-muted-foreground">
         Avaliações reais do meu perfil de freelancer na {freelance.platform}, onde atuo desde{" "}
         {freelance.memberSince}.
@@ -56,7 +56,20 @@ export function Testimonials() {
               <blockquote className="text-pretty">“{testimonial.quote}”</blockquote>
             </CardContent>
             <CardFooter className="mt-auto flex-col items-start gap-0.5">
-              <CardTitle className="text-sm">{testimonial.project}</CardTitle>
+              <CardTitle className="text-sm">
+                {testimonial.url ? (
+                  <a
+                    href={testimonial.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline-offset-4 hover:underline"
+                  >
+                    {testimonial.project}
+                  </a>
+                ) : (
+                  testimonial.project
+                )}
+              </CardTitle>
               <p className="text-xs text-muted-foreground">
                 Cliente na {freelance.platform} · {testimonial.date}
               </p>
