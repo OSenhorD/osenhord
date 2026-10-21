@@ -30,7 +30,7 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
     <td colspan="3" valign="top">
       <img src="public/projects/gvit-epi/painel.webp" alt="GVIT EPI" />
       <br /><strong>GVIT EPI</strong>
-      <br /><sub>Gestão e entrega de EPI com motor de regras que confere CA, risco da função e prazo de troca antes de cada entrega, com vencimentos, ocorrências e ficha NR-06</sub>
+      <br /><sub>Gestão e entrega de EPI com motor de regras que confere CA, risco da função e prazo de troca antes de cada entrega, com vencimentos, ocorrências e ficha NR-06 · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD</sub>
     </td>
   </tr>
   <tr>
@@ -55,7 +55,7 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
 ## Tecnologias
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,react,postgres,aws,js,php,py,laravel,nextjs,angular,vue,sass,mongodb,mysql,redis,supabase,rabbitmq,docker,linux,nginx,jenkins,github,gitlab,vscode&perline=12" alt="Tecnologias" />
+  <img src="https://skillicons.dev/icons?i=nodejs,react,postgres,aws,js,php,py,nestjs,laravel,nextjs,angular,vue,sass,mongodb,mysql,redis,supabase,rabbitmq,docker,linux,nginx,jenkins,github,gitlab,vscode&perline=12" alt="Tecnologias" />
 </p>
 
 ## Estatísticas
