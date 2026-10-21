@@ -10,6 +10,8 @@ export type SocialLink = {
 export type ProjectImage = {
   src: string
   alt: string
+  // Quando presente, a galeria mostra o vídeo do YouTube no lugar da imagem
+  youtubeId?: string
 }
 
 export type Project = {
@@ -260,6 +262,30 @@ export const projects: Project[] = [
       "Ficha de EPI (NR-06) e dossiê de eficácia por trabalhador",
     ],
     tags: ["Next.js", "NestJS", "PostgreSQL", "Claude SDK", "Docker", "Portainer", "GitHub CI/CD"],
+  },
+  {
+    title: "Sistema de Cashback",
+    description:
+      "Sistema de cashback sob medida para uma indústria de MDF, com foco em fidelização e aumento de recorrência de compras. Os clientes acumulam créditos a cada pedido e usam esses valores em compras futuras ou campanhas promocionais.",
+    images: [
+      {
+        src: "/projects/cashback/video.webp",
+        alt: "Demonstração do sistema de cashback",
+        youtubeId: "nIiooEnrTe8",
+      },
+    ],
+  },
+  {
+    title: "Sistema de Agendamento para Clínicas de Estética",
+    description:
+      "Agendamento online com foco em automação, organização e experiência do cliente: o próprio cliente escolhe a profissional, o tratamento e o horário disponível, de forma rápida e intuitiva.",
+    images: [
+      {
+        src: "/projects/agendamento-estetica/video.webp",
+        alt: "Demonstração do sistema de agendamento",
+        youtubeId: "uS0W-OkU1YI",
+      },
+    ],
   },
   {
     title: "Portal de Chamados",

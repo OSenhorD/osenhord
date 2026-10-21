@@ -35,10 +35,22 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
   </tr>
   <tr>
     <td width="33%" valign="top">
+      <a href="https://www.youtube.com/watch?v=nIiooEnrTe8"><img src="public/projects/cashback/video.webp" alt="Sistema de Cashback (vídeo)" /></a>
+      <br /><strong>Sistema de Cashback</strong>
+      <br /><sub>Cashback sob medida para indústria de MDF: créditos a cada pedido para usar em compras futuras e campanhas · <a href="https://www.youtube.com/watch?v=nIiooEnrTe8">vídeo</a></sub>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://www.youtube.com/watch?v=uS0W-OkU1YI"><img src="public/projects/agendamento-estetica/video.webp" alt="Sistema de Agendamento para Clínicas de Estética (vídeo)" /></a>
+      <br /><strong>Agendamento para Clínicas de Estética</strong>
+      <br /><sub>O cliente escolhe a profissional, o tratamento e o horário disponível · <a href="https://www.youtube.com/watch?v=uS0W-OkU1YI">vídeo</a></sub>
+    </td>
+    <td width="33%" valign="top">
       <img src="public/projects/portal-de-chamados/kanban.webp" alt="Portal de Chamados" />
       <br /><strong>Portal de Chamados</strong>
       <br /><sub>Chamados semelhante ao GLPI, com permissões, chat, notificações, e-mail e quadro Kanban</sub>
     </td>
+  </tr>
+  <tr>
     <td width="33%" valign="top">
       <img src="public/projects/clouddiamond/horas-avulsas.webp" alt="Portal CloudDiamond" />
       <br /><strong>Portal CloudDiamond</strong>
@@ -49,6 +61,7 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
       <br /><strong>Dashboards de Módulos de ERP</strong>
       <br /><sub>Painéis em Angular 17, Angular Material e ApexCharts consumindo as APIs do ERP</sub>
     </td>
+    <td width="33%" valign="top"></td>
   </tr>
 </table>
 
