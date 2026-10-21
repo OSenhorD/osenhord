@@ -24,31 +24,46 @@ export function Projects() {
               <CardTitle className="text-lg">{project.title}</CardTitle>
               <CardDescription className="text-pretty">{project.description}</CardDescription>
             </CardHeader>
-            <CardContent className="flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <Badge key={tag} variant="outline">
-                  {tag}
-                </Badge>
-              ))}
-            </CardContent>
-            <CardFooter className="mt-auto gap-2">
-              {project.repo && (
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.repo} target="_blank" rel="noreferrer">
-                    <SocialIcon icon="github" />
-                    Código
-                  </a>
-                </Button>
-              )}
-              {project.demo && (
-                <Button variant="ghost" size="sm" asChild>
-                  <a href={project.demo} target="_blank" rel="noreferrer">
-                    <ExternalLink />
-                    Demo
-                  </a>
-                </Button>
-              )}
-            </CardFooter>
+            {(project.highlights || project.tags) && (
+              <CardContent className="space-y-4">
+                {project.highlights && (
+                  <ul className="list-disc space-y-1 pl-5 text-sm text-muted-foreground marker:text-foreground/40">
+                    {project.highlights.map((highlight) => (
+                      <li key={highlight}>{highlight}</li>
+                    ))}
+                  </ul>
+                )}
+                {project.tags && (
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <Badge key={tag} variant="outline">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
+              </CardContent>
+            )}
+            {(project.repo || project.demo) && (
+              <CardFooter className="mt-auto gap-2">
+                {project.repo && (
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.repo} target="_blank" rel="noreferrer">
+                      <SocialIcon icon="github" />
+                      Código
+                    </a>
+                  </Button>
+                )}
+                {project.demo && (
+                  <Button variant="ghost" size="sm" asChild>
+                    <a href={project.demo} target="_blank" rel="noreferrer">
+                      <ExternalLink />
+                      Demo
+                    </a>
+                  </Button>
+                )}
+              </CardFooter>
+            )}
           </Card>
         ))}
       </div>

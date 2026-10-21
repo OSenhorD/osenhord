@@ -4,22 +4,31 @@
 export type SocialLink = {
   label: string
   href: string
-  icon: "github" | "linkedin" | "mail"
+  icon: "github" | "linkedin" | "whatsapp" | "mail"
 }
 
 export type Project = {
   title: string
   description: string
-  tags: string[]
+  highlights?: string[]
+  tags?: string[]
   repo?: string
   demo?: string
+}
+
+export type Testimonial = {
+  project: string
+  quote: string
+  rating: number
+  date: string
 }
 
 export type Experience = {
   role: string
   company: string
-  period: string
-  description: string
+  type?: string
+  period?: string
+  highlights?: string[]
   stack?: string[]
 }
 
@@ -34,12 +43,16 @@ export const profile = {
   role: "Desenvolvedor Full Stack",
   location: "Brasil",
   headline:
-    "Construo aplicações web modernas, rápidas e bem cuidadas — do back-end à interface.",
+    "Com foco em integrações de sistemas e automação de processos.",
   about: [
-    "Sou desenvolvedor de software com foco em criar produtos úteis e bem construídos. Gosto de transformar problemas complexos em soluções simples, com código limpo e boa experiência para quem usa.",
-    "Atualmente trabalho principalmente com o ecossistema JavaScript/TypeScript, React e Node.js, sempre buscando aprender novas ferramentas e boas práticas.",
+    "Experiência na construção de APIs, integrações entre plataformas (ERP, sistemas web, serviços externos) e uso de inteligência artificial para ganho de produtividade e geração de valor.",
+    "Atuo desde o levantamento de requisitos com clientes até a implementação e sustentação das soluções, sempre com foco em eficiência, escalabilidade e resolução de problemas reais.",
+    "São mais de 5 anos de experiência: comecei dando suporte a projetos legados em AngularJS e PHP e, com o tempo, passei a criar portais e sistemas de gestão personalizados com Node.js, React, Next.js, Vue.js, PostgreSQL, Redis e RabbitMQ.",
+    "Stack principal: Node.js, React, PostgreSQL, AWS.",
   ],
-  email: "contato@exemplo.com",
+  email: "dev.davidmarques@gmail.com",
+  phone: "(42) 99902-7693",
+  whatsapp: "https://wa.me/5542999027693",
   github: "https://github.com/OSenhorD",
   available: true,
 }
@@ -47,26 +60,147 @@ export const profile = {
 export const socials: SocialLink[] = [
   { label: "GitHub", href: "https://github.com/OSenhorD", icon: "github" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/davidmarques123/", icon: "linkedin" },
+  { label: "WhatsApp", href: profile.whatsapp, icon: "whatsapp" },
   { label: "E-mail", href: `mailto:${profile.email}`, icon: "mail" },
 ]
 
 export const skills: SkillGroup[] = [
   {
-    title: "Front-end",
-    items: ["React", "TypeScript", "Tailwind CSS", "shadcn/ui", "Vite"],
+    title: "Stack principal",
+    items: ["Node.js", "React", "PostgreSQL", "AWS"],
+  },
+  {
+    title: "Linguagens",
+    items: ["JavaScript", "TypeScript", "PHP", "Python", "SQL", "HTML", "CSS"],
+  },
+  {
+    title: "Front-end e mobile",
+    items: [
+      "React",
+      "React Hooks",
+      "Next.js",
+      "Angular",
+      "Angular Material",
+      "AngularJS",
+      "Vue.js",
+      "SASS",
+      "ApexCharts",
+      "WordPress",
+      "React Native",
+      "Capacitor",
+      "Apple Store",
+      "Play Store",
+    ],
   },
   {
     title: "Back-end",
-    items: ["Node.js", "Express", "REST APIs", "PostgreSQL", "Prisma"],
+    items: [
+      "Node.js",
+      "APIs REST",
+      "Express",
+      "Laravel",
+      "FilamentPHP",
+      "CodeIgniter",
+      "Composer",
+      "Supabase",
+      "RabbitMQ",
+      "MQTT",
+    ],
   },
   {
-    title: "Ferramentas",
-    items: ["Git", "GitHub Actions", "Docker", "Vercel", "Linux"],
+    title: "Bancos de dados",
+    items: [
+      "PostgreSQL",
+      "MySQL",
+      "MariaDB",
+      "MongoDB",
+      "Redis",
+      "Design de banco de dados",
+      "Workbench",
+    ],
+  },
+  {
+    title: "DevOps e ferramentas",
+    items: [
+      "AWS",
+      "DigitalOcean",
+      "Docker",
+      "Linux",
+      "Nginx",
+      "SSH",
+      "CI/CD",
+      "Jenkins",
+      "GitHub",
+      "GitLab",
+      "VSCode",
+    ],
+  },
+  {
+    title: "IA e automação",
+    items: [
+      "Inteligência artificial",
+      "OpenAI",
+      "APIs de LLM",
+      "n8n",
+      "Microsoft Copilot",
+      "Automação de processos",
+    ],
+  },
+  {
+    title: "Integrações",
+    items: [
+      "ERP",
+      "CRM",
+      "Tray",
+      "Pagamentos",
+      "Autenticação",
+      "Notificações",
+      "Software de impressão",
+    ],
+  },
+  {
+    title: "Produto e negócio",
+    items: [
+      "Análise de requisitos",
+      "Gestão de projetos",
+      "Suporte ao cliente",
+      "SaaS",
+      "Aplicativos web",
+      "Criação de sites",
+    ],
   },
 ]
 
-// TODO: substitua pelos seus projetos reais
 export const projects: Project[] = [
+  {
+    title: "Portal de Chamados",
+    description:
+      "Aplicação de chamados, semelhante ao GLPI, focada nos recursos necessários do contratante.",
+    highlights: [
+      "Login e permissões de acesso",
+      "Segurança dupla, no front-end e no back-end",
+      "Criação, edição e chat para chamados",
+      "Notificações e envio de e-mail",
+      "Tarefas realizadas, backlog ou a fazer, com quadro Kanban",
+    ],
+  },
+  {
+    title: "Portal CloudDiamond",
+    description:
+      "Aplicação para cadastro de tickets e acompanhamento de entregas de máquinas virtuais para empresa cliente.",
+    highlights: [
+      "Login e permissões de acesso",
+      "Segurança dupla, no front-end e no back-end",
+      "Criação e edição de tickets",
+      "Listagem de máquinas e horários disponíveis para locação",
+    ],
+  },
+  {
+    title: "Dashboards de Módulos de ERP",
+    description:
+      "Interface gráfica amigável para os clientes do ERP visualizarem os dados da sua empresa e filial, consumindo as APIs do ERP.",
+    tags: ["Angular 17", "Angular Material", "ApexCharts", "APIs de ERP"],
+  },
   {
     title: "Portfólio",
     description:
@@ -74,40 +208,71 @@ export const projects: Project[] = [
     tags: ["React", "TypeScript", "Tailwind", "shadcn/ui"],
     repo: "https://github.com/OSenhorD/osenhord",
   },
+]
+
+export const experience: Experience[] = [
   {
-    title: "Projeto Exemplo",
-    description:
-      "Descreva aqui o problema que o projeto resolve, as principais funcionalidades e o que você aprendeu.",
-    tags: ["Node.js", "PostgreSQL"],
-    repo: "https://github.com/OSenhorD",
+    role: "Desenvolvedor web freelancer",
+    company: "Autônomo",
+    highlights: [
+      "Desenvolvimento de integrações entre sistemas utilizando APIs REST",
+      "Criação de automações de processos para redução de tarefas manuais",
+      "Implementação de APIs e serviços backend com Node.js e Laravel",
+      "Integração com serviços externos (pagamentos, autenticação, notificações)",
+      "Estruturação de bancos de dados SQL (PostgreSQL/MySQL)",
+      "Utilização de IA (OpenAI, automações com n8n) para análise de dados e aumento de produtividade",
+      "Integração com APIs de LLM para geração e processamento de informações",
+      "Deploy e gestão de aplicações em AWS e DigitalOcean",
+      "Levantamento de requisitos e contato direto com clientes",
+    ],
+    stack: ["Node.js", "Laravel", "PostgreSQL", "MySQL", "OpenAI", "n8n", "AWS", "DigitalOcean"],
   },
   {
-    title: "Outro Projeto",
-    description:
-      "Uma breve descrição do projeto, destacando tecnologias e resultados alcançados.",
-    tags: ["React", "API"],
-    repo: "https://github.com/OSenhorD",
-    demo: "https://vercel.com",
+    role: "Consultor de TI",
+    company: "Vamilly Inovações em Soluções de TI Ltda",
+    type: "Tempo integral",
+    period: "set. 2020 — ago. 2023 · 3 anos",
   },
 ]
 
-// TODO: substitua pela sua experiência profissional
-export const experience: Experience[] = [
+export const freelance = {
+  platform: "99Freelas",
+  url: "https://www.99freelas.com.br/user/davidmarques-dev",
+  rating: 4.71,
+  reviews: 25,
+  completedProjects: 24,
+  memberSince: "abr. 2024",
+}
+
+// Avaliações de clientes no perfil da 99Freelas
+export const testimonials: Testimonial[] = [
   {
-    role: "Desenvolvedor Full Stack",
-    company: "Empresa Atual",
-    period: "2024 — Presente",
-    description:
-      "Desenvolvimento e manutenção de aplicações web, criação de APIs e melhorias de performance.",
-    stack: ["React", "Node.js", "PostgreSQL"],
+    project: "Plataforma de IoT responsiva",
+    quote:
+      "Esperava 1 dev, mas me entregou 2, o que foi excelente, já que meu prazo era curto. Resolveu rapidamente os desafios e entregou um resultado muito bem feito. Farei negócios novamente.",
+    rating: 5,
+    date: "dez. 2025",
   },
   {
-    role: "Desenvolvedor Front-end",
-    company: "Empresa Anterior",
-    period: "2022 — 2024",
-    description:
-      "Criação de interfaces responsivas e acessíveis, integração com APIs e componentização.",
-    stack: ["React", "TypeScript"],
+    project: "Criar landing page para empresa de guaraná",
+    quote:
+      "Excelente profissional. Comunicação clara e constante, cumpriu todos os prazos e entregou um trabalho de alta qualidade. Demonstrou domínio técnico e proatividade, sugerindo melhorias que agregaram valor ao projeto. Recomendo fortemente e contrataria novamente sem hesitar.",
+    rating: 5,
+    date: "dez. 2025",
+  },
+  {
+    project: "Landing page institucional para cervejaria",
+    quote:
+      "Trabalho impecável. Entregou exatamente o que foi combinado, com organização, qualidade técnica e ótimo relacionamento profissional. Muito satisfeito com o resultado.",
+    rating: 5,
+    date: "dez. 2025",
+  },
+  {
+    project: "Melhorias e personalizações na loja Tray",
+    quote:
+      "Excelente profissional. Comunicação clara, entregas rápida e qualidade acima do esperado. Recomendo fortemente.",
+    rating: 5,
+    date: "dez. 2025",
   },
 ]
 
@@ -116,5 +281,6 @@ export const navigation = [
   { label: "Habilidades", href: "#habilidades" },
   { label: "Projetos", href: "#projetos" },
   { label: "Experiência", href: "#experiencia" },
+  { label: "Avaliações", href: "#avaliacoes" },
   { label: "Contato", href: "#contato" },
 ]
