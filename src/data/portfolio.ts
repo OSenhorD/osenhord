@@ -18,8 +18,9 @@ export type Project = {
 export type Experience = {
   role: string
   company: string
-  period: string
-  description: string
+  type?: string
+  period?: string
+  highlights?: string[]
   stack?: string[]
 }
 
@@ -60,12 +61,90 @@ export const skills: SkillGroup[] = [
     items: ["Node.js", "React", "PostgreSQL", "AWS"],
   },
   {
-    title: "Integrações",
-    items: ["APIs", "ERP", "Sistemas web", "Serviços externos"],
+    title: "Linguagens",
+    items: ["JavaScript", "PHP", "Python"],
   },
   {
-    title: "Automação e IA",
-    items: ["Automação de processos", "Inteligência artificial", "Produtividade"],
+    title: "Front-end e mobile",
+    items: [
+      "React",
+      "React Hooks",
+      "Next.js",
+      "Angular",
+      "Vue.js",
+      "SASS",
+      "React Native",
+      "Capacitor",
+      "Apple Store",
+      "Play Store",
+    ],
+  },
+  {
+    title: "Back-end",
+    items: [
+      "Node.js",
+      "APIs REST",
+      "Laravel",
+      "FilamentPHP",
+      "Composer",
+      "Supabase",
+      "RabbitMQ",
+      "MQTT",
+    ],
+  },
+  {
+    title: "Bancos de dados",
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Design de banco de dados", "Workbench"],
+  },
+  {
+    title: "DevOps e ferramentas",
+    items: [
+      "AWS",
+      "DigitalOcean",
+      "Docker",
+      "Linux",
+      "Nginx",
+      "SSH",
+      "CI/CD",
+      "Jenkins",
+      "GitHub",
+      "GitLab",
+      "VSCode",
+    ],
+  },
+  {
+    title: "IA e automação",
+    items: [
+      "Inteligência artificial",
+      "OpenAI",
+      "APIs de LLM",
+      "n8n",
+      "Microsoft Copilot",
+      "Automação de processos",
+    ],
+  },
+  {
+    title: "Integrações",
+    items: [
+      "ERP",
+      "CRM",
+      "Tray",
+      "Pagamentos",
+      "Autenticação",
+      "Notificações",
+      "Software de impressão",
+    ],
+  },
+  {
+    title: "Produto e negócio",
+    items: [
+      "Análise de requisitos",
+      "Gestão de projetos",
+      "Suporte ao cliente",
+      "SaaS",
+      "Aplicativos web",
+      "Criação de sites",
+    ],
   },
 ]
 
@@ -95,23 +174,28 @@ export const projects: Project[] = [
   },
 ]
 
-// TODO: substitua pela sua experiência profissional
 export const experience: Experience[] = [
   {
-    role: "Desenvolvedor Full Stack",
-    company: "Empresa Atual",
-    period: "2024 — Presente",
-    description:
-      "Desenvolvimento e manutenção de aplicações web, criação de APIs e melhorias de performance.",
-    stack: ["React", "Node.js", "PostgreSQL"],
+    role: "Desenvolvedor web freelancer",
+    company: "Autônomo",
+    highlights: [
+      "Desenvolvimento de integrações entre sistemas utilizando APIs REST",
+      "Criação de automações de processos para redução de tarefas manuais",
+      "Implementação de APIs e serviços backend com Node.js e Laravel",
+      "Integração com serviços externos (pagamentos, autenticação, notificações)",
+      "Estruturação de bancos de dados SQL (PostgreSQL/MySQL)",
+      "Utilização de IA (OpenAI, automações com n8n) para análise de dados e aumento de produtividade",
+      "Integração com APIs de LLM para geração e processamento de informações",
+      "Deploy e gestão de aplicações em AWS e DigitalOcean",
+      "Levantamento de requisitos e contato direto com clientes",
+    ],
+    stack: ["Node.js", "Laravel", "PostgreSQL", "MySQL", "OpenAI", "n8n", "AWS", "DigitalOcean"],
   },
   {
-    role: "Desenvolvedor Front-end",
-    company: "Empresa Anterior",
-    period: "2022 — 2024",
-    description:
-      "Criação de interfaces responsivas e acessíveis, integração com APIs e componentização.",
-    stack: ["React", "TypeScript"],
+    role: "Consultor de TI",
+    company: "Vamilly Inovações em Soluções de TI Ltda",
+    type: "Tempo integral",
+    period: "set. 2020 — ago. 2023 · 3 anos",
   },
 ]
 

@@ -21,10 +21,10 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
 - 🧭 Atuo do levantamento de requisitos com clientes à implementação e sustentação das soluções
 - 🎯 Foco em eficiência, escalabilidade e resolução de problemas reais
 
-## Stack principal
+## Tecnologias
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,react,postgres,aws" alt="Node.js, React, PostgreSQL, AWS" />
+  <img src="https://skillicons.dev/icons?i=nodejs,react,postgres,aws,js,php,py,laravel,nextjs,angular,vue,sass,mongodb,mysql,redis,supabase,rabbitmq,docker,linux,nginx,jenkins,github,gitlab,vscode&perline=12" alt="Tecnologias" />
 </p>
 
 ## Estatísticas
