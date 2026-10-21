@@ -7,9 +7,15 @@ export type SocialLink = {
   icon: "github" | "linkedin" | "whatsapp" | "mail"
 }
 
+export type ProjectImage = {
+  src: string
+  alt: string
+}
+
 export type Project = {
   title: string
   description: string
+  images?: ProjectImage[]
   highlights?: string[]
   tags?: string[]
   repo?: string
@@ -176,6 +182,15 @@ export const projects: Project[] = [
     title: "Portal de Chamados",
     description:
       "Aplicação de chamados, semelhante ao GLPI, focada nos recursos necessários do contratante.",
+    images: [
+      { src: "/projects/portal-de-chamados/kanban.webp", alt: "Quadro Kanban com as tarefas do chamado" },
+      {
+        src: "/projects/portal-de-chamados/chamado-chat.webp",
+        alt: "Edição de chamado com chat e anexos",
+      },
+      { src: "/projects/portal-de-chamados/tarefa.webp", alt: "Cadastro de tarefa do chamado" },
+      { src: "/projects/portal-de-chamados/login.webp", alt: "Tela de login" },
+    ],
     highlights: [
       "Login e permissões de acesso",
       "Segurança dupla, no front-end e no back-end",
@@ -188,6 +203,21 @@ export const projects: Project[] = [
     title: "Portal CloudDiamond",
     description:
       "Aplicação para cadastro de tickets e acompanhamento de entregas de máquinas virtuais para empresa cliente.",
+    images: [
+      {
+        src: "/projects/clouddiamond/horas-avulsas.webp",
+        alt: "Contratação de horas avulsas com escolha de máquina",
+      },
+      {
+        src: "/projects/clouddiamond/horarios-disponiveis.webp",
+        alt: "Lista de horários disponíveis para locação",
+      },
+      {
+        src: "/projects/clouddiamond/maquina-selecionada.webp",
+        alt: "Máquina e horário selecionados",
+      },
+      { src: "/projects/clouddiamond/login.webp", alt: "Tela de login" },
+    ],
     highlights: [
       "Login e permissões de acesso",
       "Segurança dupla, no front-end e no back-end",
@@ -199,6 +229,12 @@ export const projects: Project[] = [
     title: "Dashboards de Módulos de ERP",
     description:
       "Interface gráfica amigável para os clientes do ERP visualizarem os dados da sua empresa e filial, consumindo as APIs do ERP.",
+    images: [
+      {
+        src: "/projects/dashboards-erp/faturamento.webp",
+        alt: "Dashboard de faturamento por mês e por estado",
+      },
+    ],
     tags: ["Angular 17", "Angular Material", "ApexCharts", "APIs de ERP"],
   },
   {

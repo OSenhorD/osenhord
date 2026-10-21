@@ -25,9 +25,25 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
 
 ## Projetos em destaque
 
-- **Portal de Chamados** — aplicação de chamados semelhante ao GLPI, com permissões, chat, notificações, e-mail e quadro Kanban
-- **Portal CloudDiamond** — cadastro de tickets e acompanhamento de entregas de máquinas virtuais, com agenda de locação
-- **Dashboards de Módulos de ERP** — painéis em Angular 17, Angular Material e ApexCharts consumindo as APIs do ERP
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <img src="public/projects/portal-de-chamados/kanban.webp" alt="Portal de Chamados" />
+      <br /><strong>Portal de Chamados</strong>
+      <br /><sub>Chamados semelhante ao GLPI, com permissões, chat, notificações, e-mail e quadro Kanban</sub>
+    </td>
+    <td width="33%" valign="top">
+      <img src="public/projects/clouddiamond/horas-avulsas.webp" alt="Portal CloudDiamond" />
+      <br /><strong>Portal CloudDiamond</strong>
+      <br /><sub>Tickets e acompanhamento de entregas de máquinas virtuais, com agenda de locação</sub>
+    </td>
+    <td width="33%" valign="top">
+      <img src="public/projects/dashboards-erp/faturamento.webp" alt="Dashboards de Módulos de ERP" />
+      <br /><strong>Dashboards de Módulos de ERP</strong>
+      <br /><sub>Painéis em Angular 17, Angular Material e ApexCharts consumindo as APIs do ERP</sub>
+    </td>
+  </tr>
+</table>
 
 ## Tecnologias
 

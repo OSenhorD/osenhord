@@ -1,5 +1,6 @@
 import { ArrowUpRight, ExternalLink } from "lucide-react"
 
+import { ProjectGallery } from "@/components/project-gallery"
 import { Section } from "@/components/section"
 import { SocialIcon } from "@/components/social-icon"
 import { Badge } from "@/components/ui/badge"
@@ -13,13 +14,21 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { profile, projects } from "@/data/portfolio"
+import { cn } from "@/lib/utils"
 
 export function Projects() {
   return (
     <Section id="projetos" eyebrow="03. Projetos" title="Coisas que construí">
       <div className="grid gap-4 md:grid-cols-2">
         {projects.map((project) => (
-          <Card key={project.title} className="transition-colors hover:border-foreground/20">
+          <Card
+            key={project.title}
+            className={cn(
+              "transition-colors hover:border-foreground/20",
+              project.images && "pt-0",
+            )}
+          >
+            {project.images && <ProjectGallery title={project.title} images={project.images} />}
             <CardHeader>
               <CardTitle className="text-lg">{project.title}</CardTitle>
               <CardDescription className="text-pretty">{project.description}</CardDescription>
