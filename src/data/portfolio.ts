@@ -299,8 +299,8 @@ export const projects: Project[] = [
 export const deliveredProjects: DeliveredProject[] = [
   {
     title: "Sistema de controle de gado com cadastro de pastos e app mobile",
-    period: "Desde dez. 2025",
-    inProgress: true,
+    period: "jan. — fev. 2025",
+    tags: ["Angular", "NodeJS"],
   },
   {
     title: "Converter web React/Supabase para apps nativos com Capacitor",
