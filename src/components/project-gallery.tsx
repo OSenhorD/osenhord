@@ -12,15 +12,7 @@ import {
 import type { ProjectImage } from "@/data/portfolio"
 import { cn } from "@/lib/utils"
 
-export function ProjectGallery({
-  title,
-  images,
-  coverClassName,
-}: {
-  title: string
-  images: ProjectImage[]
-  coverClassName?: string
-}) {
+export function ProjectGallery({ title, images }: { title: string; images: ProjectImage[] }) {
   const [index, setIndex] = useState(0)
   const [cover] = images
   const current = images[index]
@@ -34,10 +26,7 @@ export function ProjectGallery({
         <button
           type="button"
           aria-label={cover.youtubeId ? `Ver vídeo de ${title}` : `Ver imagens de ${title}`}
-          className={cn(
-            "group/cover relative block aspect-video w-full overflow-hidden border-b bg-muted",
-            coverClassName,
-          )}
+          className="group/cover relative block aspect-video w-full overflow-hidden border-b bg-muted"
         >
           <img
             src={cover.src}

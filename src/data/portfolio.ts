@@ -17,7 +17,8 @@ export type ProjectImage = {
 export type Project = {
   title: string
   description: string
-  featured?: boolean
+  // Aparece só na aba "Todos os projetos"
+  allOnly?: boolean
   images?: ProjectImage[]
   highlights?: string[]
   tags?: string[]
@@ -234,7 +235,6 @@ export const projects: Project[] = [
     title: "GVIT EPI",
     description:
       "Plataforma de gestão e entrega de EPI: um motor de regras confere o CA, o risco da função e o prazo de troca antes de cada entrega e registra sob qual norma cada decisão foi tomada.",
-    featured: true,
     images: [
       {
         src: "/projects/gvit-epi/painel.webp",
@@ -267,7 +267,6 @@ export const projects: Project[] = [
     title: "GVIT Gestão de Terceiros",
     description:
       "Plataforma multi-tenant de gestão de colaboradores e documentos de terceiros, com suporte a quarteirização. Uma IA faz a pré-análise dos documentos enviados pela empresa no cadastro e pelas prestadoras sobre seus colaboradores, e avaliadores humanos validam.",
-    featured: true,
     images: [
       {
         src: "/projects/gvit-terceiros/visao-global.webp",
@@ -343,6 +342,7 @@ export const projects: Project[] = [
   },
   {
     title: "Portal de Chamados",
+    allOnly: true,
     description:
       "Aplicação de chamados, semelhante ao GLPI, focada nos recursos necessários do contratante.",
     images: [
@@ -367,6 +367,7 @@ export const projects: Project[] = [
   },
   {
     title: "Portal CloudDiamond",
+    allOnly: true,
     description:
       "Aplicação para cadastro de tickets e acompanhamento de entregas de máquinas virtuais para empresa cliente.",
     images: [
