@@ -294,6 +294,7 @@ export const projects: Project[] = [
       "Prestadora cadastra colaboradores, envia documentos e corrige reprovações",
       "Tipos de documento, regras documentais, vencimentos com bloqueio automático e auditoria",
     ],
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Claude SDK", "Docker", "Portainer", "GitHub CI/CD"],
   },
   {
     title: "Sistema de Cashback",
