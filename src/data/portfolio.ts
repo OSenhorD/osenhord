@@ -4,7 +4,7 @@
 export type SocialLink = {
   label: string
   href: string
-  icon: "github" | "linkedin" | "mail"
+  icon: "github" | "linkedin" | "whatsapp" | "mail"
 }
 
 export type Project = {
@@ -40,6 +40,8 @@ export const profile = {
     "Atualmente trabalho principalmente com o ecossistema JavaScript/TypeScript, React e Node.js, sempre buscando aprender novas ferramentas e boas práticas.",
   ],
   email: "dev.davidmarques@gmail.com",
+  phone: "(42) 99902-7693",
+  whatsapp: "https://wa.me/5542999027693",
   github: "https://github.com/OSenhorD",
   available: true,
 }
@@ -47,6 +49,7 @@ export const profile = {
 export const socials: SocialLink[] = [
   { label: "GitHub", href: "https://github.com/OSenhorD", icon: "github" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/davidmarques123/", icon: "linkedin" },
+  { label: "WhatsApp", href: profile.whatsapp, icon: "whatsapp" },
   { label: "E-mail", href: `mailto:${profile.email}`, icon: "mail" },
 ]
 
