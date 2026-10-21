@@ -299,8 +299,8 @@ export const projects: Project[] = [
 export const deliveredProjects: DeliveredProject[] = [
   {
     title: "Sistema de controle de gado com cadastro de pastos e app mobile",
-    period: "Desde dez. 2025",
-    inProgress: true,
+    period: "dez. 2025 — out. 2026",
+    url: "https://www.99freelas.com.br/project/sistema-de-controle-de-gado-com-cadastro-de-pastos-e-app-mobile-715145",
   },
   {
     title: "Converter web React/Supabase para apps nativos com Capacitor",
