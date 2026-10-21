@@ -29,8 +29,8 @@ export type SkillGroup = {
 }
 
 export const profile = {
-  // TODO: troque pelos seus dados
-  name: "OSenhorD",
+  name: "David Marques",
+  handle: "OSenhorD",
   role: "Desenvolvedor Full Stack",
   location: "Brasil",
   headline:
