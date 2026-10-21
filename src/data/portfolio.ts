@@ -39,7 +39,7 @@ export const profile = {
     "Sou desenvolvedor de software com foco em criar produtos úteis e bem construídos. Gosto de transformar problemas complexos em soluções simples, com código limpo e boa experiência para quem usa.",
     "Atualmente trabalho principalmente com o ecossistema JavaScript/TypeScript, React e Node.js, sempre buscando aprender novas ferramentas e boas práticas.",
   ],
-  email: "contato@exemplo.com",
+  email: "dev.davidmarques@gmail.com",
   github: "https://github.com/OSenhorD",
   available: true,
 }
