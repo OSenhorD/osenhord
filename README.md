@@ -1,7 +1,7 @@
 <h1 align="center">Olá, eu sou o David Marques 👋</h1>
 
 <p align="center">
-  Desenvolvedor Full Stack · Brasil
+  Desenvolvedor Full Stack · Curitiba, PR
 </p>
 
 <p align="center">
@@ -29,24 +29,24 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
   <tr>
     <td width="50%" valign="top">
       <img src="public/projects/gvit-epi/painel.webp" alt="GVIT EPI" />
-      <br /><strong>GVIT EPI</strong>
+      <br /><a href="https://www.davidmarques.com.br/projetos/gvit-epi"><strong>GVIT EPI</strong></a>
       <br /><sub>Gestão e entrega de EPI com motor de regras que confere CA, risco da função e prazo de troca antes de cada entrega, com vencimentos, ocorrências e ficha NR-06 · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD</sub>
     </td>
     <td width="50%" valign="top">
       <img src="public/projects/gvit-terceiros/visao-global.webp" alt="GVIT Gestão de Terceiros" />
-      <br /><strong>GVIT Gestão de Terceiros</strong>
+      <br /><a href="https://www.davidmarques.com.br/projetos/gvit-gestao-de-terceiros"><strong>GVIT Gestão de Terceiros</strong></a>
       <br /><sub>Gestão multi-tenant de colaboradores e documentos de terceiros, com quarteirização, pré-análise de documentos por IA e validação humana · perfis de admin, contratante, avaliador e prestadora · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD</sub>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <a href="https://www.youtube.com/watch?v=nIiooEnrTe8"><img src="public/projects/cashback/video.webp" alt="Sistema de Cashback (vídeo)" /></a>
-      <br /><strong>Sistema de Cashback</strong>
+      <br /><a href="https://www.davidmarques.com.br/projetos/sistema-de-cashback"><strong>Sistema de Cashback</strong></a>
       <br /><sub>Cashback sob medida para indústria de MDF: créditos a cada pedido para usar em compras futuras e campanhas · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD · <a href="https://www.youtube.com/watch?v=nIiooEnrTe8">vídeo</a></sub>
     </td>
     <td width="50%" valign="top">
       <a href="https://www.youtube.com/watch?v=uS0W-OkU1YI"><img src="public/projects/agendamento-estetica/video.webp" alt="Sistema de Agendamento para Clínicas de Estética (vídeo)" /></a>
-      <br /><strong>Agendamento para Clínicas de Estética</strong>
+      <br /><a href="https://www.davidmarques.com.br/projetos/agendamento-clinicas-de-estetica"><strong>Agendamento para Clínicas de Estética</strong></a>
       <br /><sub>O cliente escolhe a profissional, o tratamento e o horário disponível · Next.js, NestJS, PostgreSQL, Claude SDK, Docker, Portainer e GitHub CI/CD · <a href="https://www.youtube.com/watch?v=uS0W-OkU1YI">vídeo</a></sub>
     </td>
   </tr>

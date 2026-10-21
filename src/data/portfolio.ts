@@ -16,6 +16,8 @@ export type ProjectImage = {
 
 export type Project = {
   title: string
+  // Projetos com slug ganham uma página própria em /projetos/<slug>
+  slug?: string
   description: string
   // Aparece só na aba "Todos os projetos"
   allOnly?: boolean
@@ -63,11 +65,13 @@ export type SkillGroup = {
   items: string[]
 }
 
+export const siteUrl = "https://www.davidmarques.com.br"
+
 export const profile = {
   name: "David Marques",
   domain: "davidmarques.com.br",
   role: "Desenvolvedor Full Stack",
-  location: "Brasil",
+  location: "Curitiba, Paraná",
   headline: "Com foco em integrações de sistemas e automação de processos.",
   about: [
     "Experiência na construção de APIs, integrações entre plataformas (ERP, sistemas web, serviços externos) e uso de inteligência artificial para ganho de produtividade e geração de valor.",
@@ -233,6 +237,7 @@ export const skills: SkillGroup[] = [
 export const projects: Project[] = [
   {
     title: "GVIT EPI",
+    slug: "gvit-epi",
     description:
       "Plataforma de gestão e entrega de EPI: um motor de regras confere o CA, o risco da função e o prazo de troca antes de cada entrega e registra sob qual norma cada decisão foi tomada.",
     images: [
@@ -265,6 +270,7 @@ export const projects: Project[] = [
   },
   {
     title: "GVIT Gestão de Terceiros",
+    slug: "gvit-gestao-de-terceiros",
     description:
       "Plataforma multi-tenant de gestão de colaboradores e documentos de terceiros, com suporte a quarteirização. Uma IA faz a pré-análise dos documentos enviados pela empresa no cadastro e pelas prestadoras sobre seus colaboradores, e avaliadores humanos validam.",
     images: [
@@ -297,6 +303,7 @@ export const projects: Project[] = [
   },
   {
     title: "Sistema de Cashback",
+    slug: "sistema-de-cashback",
     description:
       "Sistema de cashback sob medida para uma indústria de MDF, com foco em fidelização e aumento de recorrência de compras. Os clientes acumulam créditos a cada pedido e usam esses valores em compras futuras ou campanhas promocionais.",
     images: [
@@ -310,6 +317,7 @@ export const projects: Project[] = [
   },
   {
     title: "Sistema de Agendamento para Clínicas de Estética",
+    slug: "agendamento-clinicas-de-estetica",
     description:
       "Agendamento online com foco em automação, organização e experiência do cliente: o próprio cliente escolhe a profissional, o tratamento e o horário disponível, de forma rápida e intuitiva.",
     images: [
@@ -541,7 +549,7 @@ export const experience: Experience[] = [
   {
     role: "Desenvolvedor web freelancer",
     company: "Autônomo",
-    period: "Até o momento",
+    period: "set. 2023 — até o momento",
     highlights: [
       "Desenvolvimento de integrações entre sistemas utilizando APIs REST",
       "Criação de automações de processos para redução de tarefas manuais",
@@ -558,7 +566,7 @@ export const experience: Experience[] = [
   {
     role: "Consultor de TI",
     company: "Vamilly Inovações em Soluções de TI Ltda",
-    type: "Tempo integral · Presencial",
+    type: "Tempo integral · Presencial · Ponta Grossa, PR",
     period: "set. 2020 — ago. 2023 · 3 anos",
     summary:
       "Atuação presencial em projetos para clientes da carteira da empresa, como a Makita, com as mesmas frentes do trabalho como freelancer:",
@@ -651,11 +659,11 @@ export const testimonials: Testimonial[] = [
 ]
 
 export const navigation = [
-  { label: "Sobre", href: "#sobre" },
-  { label: "Serviços", href: "#servicos" },
-  { label: "Habilidades", href: "#habilidades" },
-  { label: "Projetos", href: "#projetos" },
-  { label: "Experiência", href: "#experiencia" },
-  { label: "Avaliações", href: "#avaliacoes" },
-  { label: "Contato", href: "#contato" },
+  { label: "Sobre", href: "/#sobre" },
+  { label: "Serviços", href: "/#servicos" },
+  { label: "Habilidades", href: "/#habilidades" },
+  { label: "Projetos", href: "/#projetos" },
+  { label: "Experiência", href: "/#experiencia" },
+  { label: "Avaliações", href: "/#avaliacoes" },
+  { label: "Contato", href: "/#contato" },
 ]
