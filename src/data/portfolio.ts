@@ -34,6 +34,7 @@ export type Experience = {
   company: string
   type?: string
   period?: string
+  summary?: string
   highlights?: string[]
   stack?: string[]
 }
@@ -266,8 +267,18 @@ export const experience: Experience[] = [
   {
     role: "Consultor de TI",
     company: "Vamilly Inovações em Soluções de TI Ltda",
-    type: "Tempo integral",
+    type: "Tempo integral · Presencial",
     period: "set. 2020 — ago. 2023 · 3 anos",
+    summary:
+      "Atuação presencial em projetos para clientes da carteira da empresa, como a Makita, com as mesmas frentes do trabalho como freelancer:",
+    highlights: [
+      "Integrações entre sistemas via APIs REST e com serviços externos (pagamentos, autenticação, notificações)",
+      "APIs e serviços backend com Node.js e Laravel, com bancos de dados SQL (PostgreSQL/MySQL)",
+      "Automação de processos e uso de IA (OpenAI, n8n, APIs de LLM) para ganho de produtividade",
+      "Deploy e gestão de aplicações em AWS e DigitalOcean",
+      "Levantamento de requisitos e contato direto com os clientes",
+    ],
+    stack: ["Node.js", "Laravel", "PostgreSQL", "MySQL", "OpenAI", "n8n", "AWS", "DigitalOcean"],
   },
 ]
 

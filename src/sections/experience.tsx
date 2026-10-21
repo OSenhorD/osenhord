@@ -17,6 +17,9 @@ export function Experience() {
             <h3 className="mt-1 text-lg font-semibold">
               {item.role} <span className="text-muted-foreground">· {item.company}</span>
             </h3>
+            {item.summary && (
+              <p className="mt-2 max-w-2xl text-pretty text-muted-foreground">{item.summary}</p>
+            )}
             {item.highlights && (
               <ul className="mt-3 max-w-2xl list-disc space-y-1.5 pl-5 text-pretty text-muted-foreground marker:text-foreground/40">
                 {item.highlights.map((highlight) => (
