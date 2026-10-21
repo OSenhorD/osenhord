@@ -8,7 +8,7 @@ import { profile, socials } from "@/data/portfolio"
 
 export function Contact() {
   return (
-    <Section id="contato" eyebrow="06. Contato" title="Vamos conversar">
+    <Section id="contato" eyebrow="07. Contato" title="Vamos conversar">
       <Card>
         <CardContent className="flex flex-col items-start gap-6 py-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-xl space-y-3 lg:max-w-md">

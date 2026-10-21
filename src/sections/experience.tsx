@@ -4,7 +4,7 @@ import { experience } from "@/data/portfolio"
 
 export function Experience() {
   return (
-    <Section id="experiencia" eyebrow="04. Experiência" title="Onde já trabalhei">
+    <Section id="experiencia" eyebrow="05. Experiência" title="Onde já trabalhei">
       <ol className="relative space-y-10 border-l pl-6 sm:pl-8">
         {experience.map((item) => (
           <li key={`${item.company}-${item.role}`} className="relative">

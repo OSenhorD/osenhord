@@ -13,20 +13,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { profile, projects } from "@/data/portfolio"
+import { deliveredProjects, freelance, profile, projects } from "@/data/portfolio"
 import { cn } from "@/lib/utils"
 
 export function Projects() {
   return (
-    <Section id="projetos" eyebrow="03. Projetos" title="Coisas que construí">
+    <Section id="projetos" eyebrow="04. Projetos" title="Coisas que construí">
       <div className="grid gap-4 md:grid-cols-2">
         {projects.map((project) => (
           <Card
             key={project.title}
-            className={cn(
-              "transition-colors hover:border-foreground/20",
-              project.images && "pt-0",
-            )}
+            className={cn("transition-colors hover:border-foreground/20", project.images && "pt-0")}
           >
             {project.images && <ProjectGallery title={project.title} images={project.images} />}
             <CardHeader>
@@ -75,6 +72,45 @@ export function Projects() {
             )}
           </Card>
         ))}
+      </div>
+
+      <div className="mt-16">
+        <h3 className="font-heading text-xl font-semibold tracking-tight">
+          Outros projetos entregues como freelancer
+        </h3>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Histórico do meu perfil na{" "}
+          <a
+            href={freelance.url}
+            target="_blank"
+            rel="noreferrer"
+            className="underline-offset-4 hover:underline"
+          >
+            {freelance.platform}
+          </a>
+          .
+        </p>
+        <ul className="mt-6 divide-y rounded-xl border">
+          {deliveredProjects.map((item) => (
+            <li
+              key={item.title}
+              className="flex flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6"
+            >
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-medium">{item.title}</span>
+                {item.inProgress && <Badge variant="secondary">Em andamento</Badge>}
+                {item.tags?.map((tag) => (
+                  <Badge key={tag} variant="outline">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+              <span className="shrink-0 font-mono text-xs text-muted-foreground">
+                {item.period}
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="mt-8 flex justify-center">

@@ -29,7 +29,7 @@ function Stars({ rating }: { rating: number }) {
 
 export function Testimonials() {
   return (
-    <Section id="avaliacoes" eyebrow="05. Avaliações" title="O que dizem os clientes">
+    <Section id="avaliacoes" eyebrow="06. Avaliações" title="O que dizem os clientes">
       <p className="max-w-2xl text-muted-foreground">
         Avaliações reais do meu perfil de freelancer na {freelance.platform}, onde atuo desde{" "}
         {freelance.memberSince}.

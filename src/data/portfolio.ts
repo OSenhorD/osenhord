@@ -22,6 +22,19 @@ export type Project = {
   demo?: string
 }
 
+export type Service = {
+  title: string
+  description: string
+  icon: "integrations" | "automation" | "systems" | "sites"
+}
+
+export type DeliveredProject = {
+  title: string
+  period: string
+  tags?: string[]
+  inProgress?: boolean
+}
+
 export type Testimonial = {
   project: string
   quote: string
@@ -54,8 +67,13 @@ export const profile = {
   about: [
     "Experiência na construção de APIs, integrações entre plataformas (ERP, sistemas web, serviços externos) e uso de inteligência artificial para ganho de produtividade e geração de valor.",
     "Atuo desde o levantamento de requisitos com clientes até a implementação e sustentação das soluções, sempre com foco em eficiência, escalabilidade e resolução de problemas reais.",
-    "São mais de 5 anos de experiência: comecei dando suporte a projetos legados em AngularJS e PHP e, com o tempo, passei a criar portais e sistemas de gestão personalizados com Node.js, React, Next.js, Vue.js, PostgreSQL, Redis e RabbitMQ.",
+    "São cerca de 6 anos de experiência prática: comecei dando suporte a projetos legados em AngularJS e PHP e, com o tempo, passei a criar portais e sistemas de gestão personalizados com Node.js, React, Next.js, Vue.js, PostgreSQL, Redis e RabbitMQ.",
     "Stack principal: Node.js, React, PostgreSQL, AWS.",
+  ],
+  avatar: "/avatar.webp",
+  languages: [
+    { name: "Português", level: "nativo" },
+    { name: "Inglês", level: "básico" },
   ],
   email: "dev.davidmarques@gmail.com",
   phone: "(42) 99902-7693",
@@ -69,6 +87,33 @@ export const socials: SocialLink[] = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/davidmarques123/", icon: "linkedin" },
   { label: "WhatsApp", href: profile.whatsapp, icon: "whatsapp" },
   { label: "E-mail", href: `mailto:${profile.email}`, icon: "mail" },
+]
+
+export const services: Service[] = [
+  {
+    title: "Integrações e APIs",
+    description:
+      "APIs REST e integrações entre ERP, sistemas web e serviços externos, como pagamentos, autenticação e notificações.",
+    icon: "integrations",
+  },
+  {
+    title: "Automação e IA",
+    description:
+      "Automação de processos para reduzir tarefas manuais, com n8n, OpenAI e APIs de LLM, incluindo assistentes e automações no WhatsApp.",
+    icon: "automation",
+  },
+  {
+    title: "Sistemas web e apps",
+    description:
+      "Portais, sistemas de gestão e dashboards sob medida, e apps para iOS e Android com React Native e Capacitor.",
+    icon: "systems",
+  },
+  {
+    title: "Sites e e-commerce",
+    description:
+      "Landing pages, páginas de vendas e melhorias e personalizações em lojas Tray.",
+    icon: "sites",
+  },
 ]
 
 export const skills: SkillGroup[] = [
@@ -247,10 +292,38 @@ export const projects: Project[] = [
   },
 ]
 
+// Histórico de projetos no perfil da 99Freelas
+export const deliveredProjects: DeliveredProject[] = [
+  {
+    title: "Sistema de controle de gado com cadastro de pastos e app mobile",
+    period: "Desde dez. 2025",
+    inProgress: true,
+  },
+  {
+    title: "Conversão de web app React/Supabase para apps nativos com Capacitor",
+    period: "jan. — fev. 2026",
+    tags: ["React", "Supabase", "Capacitor"],
+  },
+  { title: "Plataforma de IoT responsiva", period: "dez. 2025" },
+  { title: "Melhorias e personalizações na loja Tray", period: "dez. 2025", tags: ["Tray"] },
+  { title: "Landing page institucional para cervejaria", period: "dez. 2025" },
+  { title: "Landing page para empresa de guaraná", period: "dez. 2025" },
+  {
+    title: "Correção de bug em assistente financeiro no WhatsApp",
+    period: "jul. — ago. 2025",
+    tags: ["n8n"],
+  },
+  { title: "Automação de follow-up e nutrição de leads via WhatsApp", period: "jul. — ago. 2025" },
+  { title: "Página de vendas em HTML para desktop e mobile", period: "jun. — jul. 2025" },
+  { title: "Novos campos em loja Tray via HTML", period: "jun. 2025", tags: ["Tray"] },
+  { title: "Web app para cadastro de vendedoras", period: "ago. 2024 — out. 2025" },
+]
+
 export const experience: Experience[] = [
   {
     role: "Desenvolvedor web freelancer",
     company: "Autônomo",
+    period: "Até o momento",
     highlights: [
       "Desenvolvimento de integrações entre sistemas utilizando APIs REST",
       "Criação de automações de processos para redução de tarefas manuais",
@@ -325,6 +398,7 @@ export const testimonials: Testimonial[] = [
 
 export const navigation = [
   { label: "Sobre", href: "#sobre" },
+  { label: "Serviços", href: "#servicos" },
   { label: "Habilidades", href: "#habilidades" },
   { label: "Projetos", href: "#projetos" },
   { label: "Experiência", href: "#experiencia" },

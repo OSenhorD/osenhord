@@ -16,7 +16,7 @@ export function SiteHeader() {
           <span className="text-muted-foreground">.dev</span>
         </a>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {navigation.map((item) => (
             <Button key={item.href} variant="ghost" size="sm" asChild>
               <a href={item.href}>{item.label}</a>
@@ -25,7 +25,7 @@ export function SiteHeader() {
           <ModeToggle />
         </nav>
 
-        <div className="flex items-center gap-1 md:hidden">
+        <div className="flex items-center gap-1 lg:hidden">
           <ModeToggle />
           <Button
             variant="ghost"
@@ -40,7 +40,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <nav className="border-t md:hidden">
+        <nav className="border-t lg:hidden">
           <div className="mx-auto flex max-w-5xl flex-col px-4 py-2 sm:px-6">
             {navigation.map((item) => (
               <a

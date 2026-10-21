@@ -21,7 +21,8 @@ Desenvolvedor Full Stack com foco em **integrações de sistemas** e **automaç�
 - 🤖 Uso inteligência artificial para ganho de produtividade e geração de valor
 - 🧭 Atuo do levantamento de requisitos com clientes à implementação e sustentação das soluções
 - 🎯 Foco em eficiência, escalabilidade e resolução de problemas reais
-- ⭐ Mais de 5 anos de experiência · 24 projetos concluídos como freelancer, com nota 4,71 em 25 avaliações na [99Freelas](https://www.99freelas.com.br/user/davidmarques-dev)
+- ⭐ Cerca de 6 anos de experiência · 24 projetos concluídos como freelancer, com nota 4,71 em 25 avaliações na [99Freelas](https://www.99freelas.com.br/user/davidmarques-dev)
+- 🗣️ Português nativo · Inglês básico
 
 ## Projetos em destaque
 

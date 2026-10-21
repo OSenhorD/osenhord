@@ -5,7 +5,7 @@ import { skills } from "@/data/portfolio"
 
 export function Skills() {
   return (
-    <Section id="habilidades" eyebrow="02. Habilidades" title="Tecnologias que uso">
+    <Section id="habilidades" eyebrow="03. Habilidades" title="Tecnologias que uso">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {skills.map((group) => (
           <Card key={group.title}>
