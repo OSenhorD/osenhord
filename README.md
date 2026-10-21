@@ -7,8 +7,7 @@
 <p align="center">
   <!-- TODO: troque pelo domínio da Vercel após o primeiro deploy -->
   <a href="https://osenhord.vercel.app"><img src="https://img.shields.io/badge/Portfólio-000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfólio" /></a>
-  <!-- TODO: adicione o seu LinkedIn -->
-  <a href="https://www.linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.linkedin.com/in/davidmarques123/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
 
 ## Sobre mim

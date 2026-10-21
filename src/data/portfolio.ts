@@ -46,8 +46,7 @@ export const profile = {
 
 export const socials: SocialLink[] = [
   { label: "GitHub", href: "https://github.com/OSenhorD", icon: "github" },
-  // TODO: adicione o seu LinkedIn
-  { label: "LinkedIn", href: "https://www.linkedin.com/", icon: "linkedin" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/davidmarques123/", icon: "linkedin" },
   { label: "E-mail", href: `mailto:${profile.email}`, icon: "mail" },
 ]
 
