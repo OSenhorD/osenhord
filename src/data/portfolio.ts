@@ -288,6 +288,25 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "Dashboards de Módulos de ERP",
+    description:
+      "Interface gráfica amigável para os clientes do ERP visualizarem os dados da sua empresa e filial, consumindo as APIs do ERP.",
+    images: [
+      {
+        src: "/projects/dashboards-erp/faturamento.webp",
+        alt: "Dashboard de faturamento por mês e por estado",
+      },
+    ],
+    tags: ["Angular 17", "Angular Material", "ApexCharts", "APIs de ERP"],
+  },
+  {
+    title: "Portfólio",
+    description:
+      "Este site! Feito com React, TypeScript, Tailwind CSS e shadcn/ui, hospedado na Vercel.",
+    tags: ["React", "TypeScript", "Tailwind", "shadcn/ui"],
+    repo: "https://github.com/OSenhorD/osenhord",
+  },
+  {
     title: "Portal de Chamados",
     description:
       "Aplicação de chamados, semelhante ao GLPI, focada nos recursos necessários do contratante.",
@@ -336,25 +355,6 @@ export const projects: Project[] = [
       "Criação e edição de tickets",
       "Listagem de máquinas e horários disponíveis para locação",
     ],
-  },
-  {
-    title: "Dashboards de Módulos de ERP",
-    description:
-      "Interface gráfica amigável para os clientes do ERP visualizarem os dados da sua empresa e filial, consumindo as APIs do ERP.",
-    images: [
-      {
-        src: "/projects/dashboards-erp/faturamento.webp",
-        alt: "Dashboard de faturamento por mês e por estado",
-      },
-    ],
-    tags: ["Angular 17", "Angular Material", "ApexCharts", "APIs de ERP"],
-  },
-  {
-    title: "Portfólio",
-    description:
-      "Este site! Feito com React, TypeScript, Tailwind CSS e shadcn/ui, hospedado na Vercel.",
-    tags: ["React", "TypeScript", "Tailwind", "shadcn/ui"],
-    repo: "https://github.com/OSenhorD/osenhord",
   },
 ]
 
