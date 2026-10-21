@@ -59,7 +59,7 @@ export type SkillGroup = {
 
 export const profile = {
   name: "David Marques",
-  handle: "OSenhorD",
+  domain: "davidmarques.com.br",
   role: "Desenvolvedor Full Stack",
   location: "Brasil",
   headline:
