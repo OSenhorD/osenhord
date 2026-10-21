@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react"
+import { ArrowRight, ExternalLink } from "lucide-react"
 
 import { ProjectGallery } from "@/components/project-gallery"
 import { SocialIcon } from "@/components/social-icon"
@@ -20,7 +20,15 @@ export function ProjectCard({ project }: { project: Project }) {
     <Card className={cn("transition-colors hover:border-foreground/20", project.images && "pt-0")}>
       {project.images && <ProjectGallery title={project.title} images={project.images} />}
       <CardHeader>
-        <CardTitle className="text-lg">{project.title}</CardTitle>
+        <CardTitle className="text-lg">
+          {project.slug ? (
+            <a href={`/projetos/${project.slug}`} className="underline-offset-4 hover:underline">
+              {project.title}
+            </a>
+          ) : (
+            project.title
+          )}
+        </CardTitle>
         <CardDescription className="text-pretty">{project.description}</CardDescription>
       </CardHeader>
       {(project.highlights || project.tags) && (
@@ -43,8 +51,16 @@ export function ProjectCard({ project }: { project: Project }) {
           )}
         </CardContent>
       )}
-      {(project.repo || project.demo) && (
+      {(project.slug || project.repo || project.demo) && (
         <CardFooter className="mt-auto gap-2">
+          {project.slug && (
+            <Button size="sm" asChild>
+              <a href={`/projetos/${project.slug}`}>
+                Ver detalhes
+                <ArrowRight data-icon="inline-end" />
+              </a>
+            </Button>
+          )}
           {project.repo && (
             <Button variant="outline" size="sm" asChild>
               <a href={project.repo} target="_blank" rel="noreferrer">

@@ -47,13 +47,13 @@ export function Hero() {
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <Button size="lg" asChild>
-              <a href="#projetos">
+              <a href="/#projetos">
                 Ver projetos
                 <ArrowRight data-icon="inline-end" />
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="#contato">Entrar em contato</a>
+              <a href="/#contato">Entrar em contato</a>
             </Button>
             <div className="ml-1 flex items-center gap-1">
               {socials.map((social) => (
