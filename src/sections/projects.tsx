@@ -1,5 +1,6 @@
 import { ArrowUpRight, ExternalLink } from "lucide-react"
 
+import { DeliveredProjects } from "@/components/delivered-projects"
 import { ProjectGallery } from "@/components/project-gallery"
 import { Section } from "@/components/section"
 import { SocialIcon } from "@/components/social-icon"
@@ -13,7 +14,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { deliveredProjects, freelance, profile, projects } from "@/data/portfolio"
+import { profile, projects } from "@/data/portfolio"
 import { cn } from "@/lib/utils"
 
 export function Projects() {
@@ -74,44 +75,7 @@ export function Projects() {
         ))}
       </div>
 
-      <div className="mt-16">
-        <h3 className="font-heading text-xl font-semibold tracking-tight">
-          Outros projetos entregues como freelancer
-        </h3>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Histórico do meu perfil na{" "}
-          <a
-            href={freelance.url}
-            target="_blank"
-            rel="noreferrer"
-            className="underline-offset-4 hover:underline"
-          >
-            {freelance.platform}
-          </a>
-          .
-        </p>
-        <ul className="mt-6 divide-y rounded-xl border">
-          {deliveredProjects.map((item) => (
-            <li
-              key={item.title}
-              className="flex flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6"
-            >
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="font-medium">{item.title}</span>
-                {item.inProgress && <Badge variant="secondary">Em andamento</Badge>}
-                {item.tags?.map((tag) => (
-                  <Badge key={tag} variant="outline">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-              <span className="shrink-0 font-mono text-xs text-muted-foreground">
-                {item.period}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <DeliveredProjects />
 
       <div className="mt-8 flex justify-center">
         <Button variant="link" asChild>
